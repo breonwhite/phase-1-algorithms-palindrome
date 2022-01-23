@@ -1,9 +1,21 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let wordReversed = word.split("").reverse().join("");
+  if (word == wordReversed) {
+    return true;
+  } else if (word !== wordReversed) {
+    return false;
+  }
 }
 
 /* 
-  Add your pseudocode here
+  Determine if a string is a palindrome
+
+  Iterate over a string
+  Read string from left to right and store it in a first value
+  Read string from right to left and store it in a second value
+  Check if first value === second value
+  If yes, return true
+  If no, return false
 */
 
 /*
